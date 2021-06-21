@@ -29,3 +29,6 @@ const btnRe = () => {
 btnStart.addEventListener("click", btnSt);
 btnPause.addEventListener("click", btnPa);
 btnResume.addEventListener("click", btnRe);
+
+
+console.log($);

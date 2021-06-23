@@ -1,9 +1,19 @@
-const scorePlayer = document.querySelector("#scorePlayer");
-const scoreCpu = document.querySelector("#scoreCPU");
+let scorePlayer;
+let scoreCpu;
 
-const incrementPlayer = (sPlayer) => {
-    scorePlayer.innerText = `${sPlayer}`;
-}
-const incrementCpu = (sCpu) => {
-    scoreCpu.innerText = `${sCpu}`;
+const initScore = () => {
+    
+    scorePlayer = $("#scorePlayer");
+    scoreCpu = $("#scoreCPU");
+
+    const score = {};
+
+    score.incrementPlayer = (sPlayer) => {
+        scorePlayer.text(sPlayer);
+    }
+    score.incrementCpu = (sCpu) => {
+        scoreCpu.text(sCpu);
+    }
+
+    return score;
 }

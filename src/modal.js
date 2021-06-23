@@ -1,15 +1,9 @@
-const newModal = document.createElement("div");
-const main = document.querySelector("main");
-
-newModal.classList.add("modal");
-newModal.tabIndex = "-1";
-newModal.id = "modal";
-main.appendChild(newModal);
-
-newModal.innerHTML = `<div class="modal-dialog">
+const main=$("main");
+const newModal= $(`<div class="modal">
+                        <div class="modal-dialog" tabIndex = "-1">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title">MORPION</h5>
+                                    <h1 class="modal-title" id="modal-title"></h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -20,4 +14,8 @@ newModal.innerHTML = `<div class="modal-dialog">
                                     <button type="button" class="btn btn-primary" id="redemarrer" data-bs-dismiss="modal">Red&eacute;marrer</button>
                                 </div>
                             </div>
-                        </div>`;
+                        </div>
+                    </div>`        
+                );
+main.append(newModal);
+

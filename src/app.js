@@ -84,7 +84,7 @@ $(()=>{
 
  
 
-//Analyser la response
+// //Analyser la response
 // const xhr = new XMLHttpRequest();
 // xhr.open("GET","https://api.jsonbin.io/b/60d32b9b5ed58625fd177079");
 // xhr.setRequestHeader("secret-key","$2b$10$DrQLcmDPnd4qPExl/dCx8ea5xJ0b/IQDMinWHnIihmW7NNi9IPbOy");
@@ -100,3 +100,15 @@ $(()=>{
 
 // xhr.send();
 //console.log("Après send");
+// let req = new XMLHttpRequest();
+
+// req.onreadystatechange = () => {
+//   if (req.readyState == XMLHttpRequest.DONE) {
+//     console.log(req.responseText);
+//   }
+// };
+
+// req.open("PUT", "https://api.jsonbin.io/b/60d32b9b5ed58625fd177079", true);
+// req.setRequestHeader("Content-Type", "application/json");
+// req.setRequestHeader("secret-key","$2b$10$DrQLcmDPnd4qPExl/dCx8ea5xJ0b/IQDMinWHnIihmW7NNi9IPbOy");
+// req.send('{"scorePlayer": 5}');
